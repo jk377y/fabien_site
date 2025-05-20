@@ -1,0 +1,404 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+}
+#header {
+    height: 100vh;
+    width: 15%;
+    min-width: 300px;
+    position: fixed;
+    left: 0;
+    background-color: #010b75cb;
+    overflow-y: scroll;
+}
+#avatar {
+    margin-top: 50px;
+    margin-left: 18px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+#role-title {
+    margin-top: 8px;
+    margin-left: 75px;
+    color:white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+#name-plate {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+#navbar {
+    text-align: center;
+}
+.anchor-item {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    margin-top: 20px;
+    list-style: none;
+}
+.nav-item {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+.nav-item:hover {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, -3px);
+  }
+
+#icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#name {
+    color: #010b75f7;
+    font-weight:500
+}
+.current-page {
+    text-shadow: 0 0 10px white;
+}
+/* Header */
+
+/* About */
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    padding: 10px;
+    /* height: 100vh; */
+    margin-bottom: 350px;
+}
+#about-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 70%;
+    text-align: justify;
+}
+#about-title {
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #010b75f7;
+    margin-top: 20px;
+    text-align: center;
+}
+#profile-pic {
+    width: 300px;
+    border-radius: 12px;
+}
+#about-text-pic-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 200px;
+    margin-top: 50px;
+}
+/* About */
+
+/* Portfolio */
+#portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 315px;
+    margin-right: 15px;
+    padding: 10px;
+    /* height: 100vh; */
+    background-color: #010b7597;
+    border-radius: 12px;
+    margin-bottom: 175px;
+}
+#portfolio-title {
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 200px;
+    margin-top: 37px;
+}
+.project-anchor {
+    width: 20%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.project-photo {
+    border-radius: 12px;
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 10px #06000078;
+}
+.project-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 70%;
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+}
+#btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+#demo-btn, #repo-btn {
+    background-color: #010b75f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+#demo-btn:hover {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, -2px);
+  }
+#repo-btn:hover {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, -2px);
+  }
+figcaption{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/* Portfolio */
+
+/* Resume */
+#resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 315px;
+    padding: 10px; 
+    margin-bottom: 200px;
+}
+#resume-title{
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #010b75f7;
+    margin-top: 20px;
+    text-align: center;
+}
+#cv-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px; 
+}
+#cv-btn{
+    background-color: #010b75f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    margin-left: 15px;
+}
+#cv-btn:hover {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, -2px);
+  }
+/* Resume */
+
+/* Contact */
+#contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    padding: 40px;  
+    margin-top: 30px; 
+    border: 3px solid #010b75f7;
+    background-color: #010b75cb; 
+    margin-bottom: 20px;
+    border-radius: 12px;
+    width:250px;
+    box-shadow: 5px 10px #06000078;
+}
+#contact-w-photo-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 600px;
+    margin-top: 37px;
+    border: 3px solid #010b75f7;
+    margin-left: 400px;
+    margin-right: 150px;
+    background-color: #010b7597;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 10px #06000078;
+}
+#cartoonme {
+    max-width: 325px;
+    /* min-width: 50%; */
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-right: 25px;
+    box-shadow: 5px 10px #06000078;
+}
+#contact-title {
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#input {
+    border-radius: 10px;
+    width: 215px;
+    padding:3px;
+}
+textarea{
+    border-radius: 8px;
+    padding:10px;
+    height: 60px;
+    width:215px;
+}
+#send-btn {
+    background-color: #010b75f7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+    border: 2px solid white;
+}
+#send-btn:hover {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, -2px);
+  }
+label{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#whisper {
+  position: relative;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  max-width: 200px;
+  height:40px;
+  font-family: "Raleway", sans-serif;
+  margin-left: 30px;
+  box-shadow: 5px 10px #06000078;
+}
+#whisper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 180px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #ccc;
+  border-left: 0;
+  margin-top: -10px;
+  margin-left: 1px;
+}
+#whisper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 180px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  margin-top: -9px;
+  margin-left: 1px;
+}
+/* Contact */
+
+/* Footer */
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 315px;
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+.footer-icons {
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 50px; 
+    margin-left: 50px;
+    width: 75px
+}
+
